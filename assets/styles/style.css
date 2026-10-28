@@ -45,48 +45,46 @@ body {
 
 .header {
   position: relative;
-  width: 100%;
+  
 
   display: flex;
-  background-color: rgb(0, 0, 255);
+
+  background-color: Orange; 
 }
 
-.header div {
-  position: relative;
+.header__unit {
   padding: 0.5rem;
-  background-color: rgb(0, 255, 0);
+
+  background-color: green;
 }
 
-.header div:nth-child(2) {
+
+
+
+.header__unit:nth-child(1) {
   background-color: cyan;
 }
 
-.header div:nth-child(3) {
-  background-color: magenta;
-}
 
-.header div:nth-child(4) {
-  background-color: yellow;
-}
 
-.content {
+.clock {
   position: relative;
   flex: 1;
-
   display: flex;
   flex-flow: column;
+
 }
 
-.content div {
-  position: relative;
+.clock__unit {
   padding: 0.5rem;
-  background-color: lightpink;
-}
-
-.content div:nth-child(2) {
   background-color: lightgreen;
+  transition: flex 0.5s ease-out;
 }
 
-.content div:nth-child(3) {
-  background-color: lightsalmon;
+.clock__unit:nth-child(2) {
+  background-color: lightblue;
+}
+
+.clock__unit:nth-child(3) {
+  background-color: orange;
 }
